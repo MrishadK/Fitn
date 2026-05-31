@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09090b">
+    <title>FITNICE - AI-Powered Fitness Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation - Dynamic Island -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h2>FITNICE</h2>
+            <span class="company-name">by Aitectra</span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="account.html" class="nav-link">Account</a>
+            <div class="theme-switcher premium">
+                <button class="theme-btn active" data-theme="dark" aria-label="Dark theme" title="Dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <button class="theme-btn" data-theme="light" aria-label="Light theme" title="Light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+            </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+</nav>
+
+<!-- Mobile Panel -->
+<div class="mobile-panel" id="mobilePanel">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="account.html">Account</a>
+    <div class="mobile-theme-selector premium-mobile">
+        <button class="mobile-theme-option active" data-theme="dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            Dark
+        </button>
+        <button class="mobile-theme-option" data-theme="light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            Light
+        </button>
+    </div>
+</div>
+
+
+    <main class="main-content">
+        <section class="hero reveal">
+            <div class="hero-content">
+                <h1>Experience the Future of Fitness</h1>
+                <p>Transform your health journey with our revolutionary AI-powered application designed to make fitness tracking intelligent, personalized, and effective.</p>
+                <div class="button-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.aitectra.fitnice" target="_blank" class="download-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px;">
+                    </a>
+                    <div id="appStoreBtn" class="cta-button secondary coming-soon-badge" style="cursor: pointer;">
+                        <img src="apple_logo.png" alt="Apple logo" style="height: 18px; filter: invert(0.85); margin-right: 6px;">
+                        <span>App Store - Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Showcase Section -->
+        <section class="app-showcase reveal">
+            <div class="showcase-container">
+                <div class="showcase-info">
+                    <span class="showcase-badge">Premium App Experience</span>
+                    <h2>Intelligent UI, Designed for You</h2>
+                    <p>Take a closer look at the actual mobile screens of Fitnice. Beautifully crafted dark aesthetics meet hyper-functional data representations.</p>
+                    
+                    <div class="showcase-features">
+                        <div class="showcase-item active" data-index="0">
+                            <span class="item-number">01</span>
+                            <div>
+                                <h4>Fitnice Home Dashboard</h4>
+                                <p>Monitor daily calories, track progress goals, and view key macronutrient levels dynamically.</p>
+                            </div>
+                            <div class="showcase-progress-bar"></div>
+                        </div>
+                        <div class="showcase-item" data-index="1">
+                            <span class="item-number">02</span>
+                            <div>
+                                <h4>AI Chat with Nori</h4>
+                                <p>Generate full customized workouts, diets, and receive active support on-demand 24/7.</p>
+                            </div>
+                            <div class="showcase-progress-bar"></div>
+                        </div>
+                        <div class="showcase-item" data-index="2">
+                            <span class="item-number">03</span>
+                            <div>
+                                <h4>Nutrition Analysis Dashboard</h4>
+                                <p>Keep tab on your targets, track daily macro details, and analyze your progression status.</p>
+                            </div>
+                            <div class="showcase-progress-bar"></div>
+                        </div>
+                        <div class="showcase-item" data-index="3">
+                            <span class="item-number">04</span>
+                            <div>
+                                <h4>Interactive AI Meal Log</h4>
+                                <p>Choose simple logging methods or utilize the instant AI photo-based analysis to snap your meals.</p>
+                            </div>
+                            <div class="showcase-progress-bar"></div>
+                        </div>
+                        <div class="showcase-item" data-index="4">
+                            <span class="item-number">05</span>
+                            <div>
+                                <h4>Global Community Standings</h4>
+                                <p>Discover your national rank status and challenge fitness enthusiasts globally.</p>
+                            </div>
+                            <div class="showcase-progress-bar"></div>
+                        </div>
+                        <div class="showcase-item" data-index="5">
+                            <span class="item-number">06</span>
+                            <div>
+                                <h4>Friends Leaderboard challenge</h4>
+                                <p>Compete, compare XP points, track milestones together, and stay motivated every single day.</p>
+                            </div>
+                            <div class="showcase-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-mockup-wrapper">
+                    <!-- Phone Frame Mockup -->
+                    <div class="phone-mockup">
+                        <div class="phone-screen-container">
+                            <img src="app_home_dashboard.png" alt="Fitnice Home Dashboard" class="showcase-screen active" data-index="0">
+                            <img src="app_chat_coach.png" alt="AI Chat Coach Nori" class="showcase-screen" data-index="1">
+                            <img src="app_nutrition_analysis.png" alt="Nutrition Analysis Dashboard" class="showcase-screen" data-index="2">
+                            <img src="app_meal_log.png" alt="AI Photo Meal Logging" class="showcase-screen" data-index="3">
+                            <img src="app_leaderboard_global.png" alt="Global Leaderboard Rankings" class="showcase-screen" data-index="4">
+                            <img src="app_leaderboard_friends.png" alt="Compete with Friends Leaderboard" class="showcase-screen" data-index="5">
+                        </div>
+                        <!-- Glass reflection overlay -->
+                        <div class="phone-glare"></div>
+                        <!-- Home indicator bar -->
+                        <div class="phone-home-indicator"></div>
+                        <!-- Phone notch/speaker -->
+                        <div class="phone-notch"></div>
+                    </div>
+                    <!-- Dot navigation for mobile -->
+                    <div class="showcase-dots">
+                        <button class="showcase-dot active" data-index="0" aria-label="Screen 1"></button>
+                        <button class="showcase-dot" data-index="1" aria-label="Screen 2"></button>
+                        <button class="showcase-dot" data-index="2" aria-label="Screen 3"></button>
+                        <button class="showcase-dot" data-index="3" aria-label="Screen 4"></button>
+                        <button class="showcase-dot" data-index="4" aria-label="Screen 5"></button>
+                        <button class="showcase-dot" data-index="5" aria-label="Screen 6"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-preview">
+            <h2 class="reveal">AI-Powered Personal Coaching</h2>
+            <div class="feature-grid">
+                <div class="feature-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 16px;"><path d="m14 7 3-3 3 3-3 3-3-3Z"/><path d="M15 8.5 8.5 15"/><path d="m4 17 3-3 3 3-3 3-3-3Z"/><path d="M5 18.5 1.5 22"/><path d="M22.5 1.5 19 5"/></svg>
+                    <h3>Smart Workout Plans</h3>
+                    <p>Receive customized workout plans generated by AI based on your fitness goals, skill level, and available equipment.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 16px;"><path d="M4.1 10c1.8-3.3 5.3-5.5 9.4-5.5s7.6 2.2 9.4 5.5"/><path d="M22 10a12 12 0 0 1-20 0"/><path d="M6 10v4.5a6.5 6.5 0 0 0 12 0V10"/><path d="M12 14.5v5.5"/><path d="M9 19.5h6"/></svg>
+                    <h3>Dietary Guidance</h3>
+                    <p>Get AI-curated diet suggestions tailored to your nutritional needs, preferences, and fitness objectives.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 16px;"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                    <h3>Real-Time Chat Support</h3>
+                    <p>Chat instantly with Nori, your AI fitness coach, to receive motivation, quick tips, and on-demand answers to your queries.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FITNICE</h3>
+                <p>Your AI-powered fitness companion for a healthier lifestyle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Vennala, Kochi<br>Kerala, India</p>
+                <p>Email: tectra.ai@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Panel -->
+    <nav class="mobile-panel" id="mobilePanel" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacypolicy.html">Privacy</a>
+        <a href="settings.html">Settings</a>
+        <div class="mobile-theme-selector premium-mobile">
+        <button class="mobile-theme-option active" data-theme="dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            Dark
+        </button>
+        <button class="mobile-theme-option" data-theme="light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            Light
+        </button>
+    </div>
+    </nav>
+
+<!-- App Store Modal -->
+<div id="appStoreModal" class="app-store-modal">
+    <div class="app-store-modal-content">
+        <span class="app-store-close">&times;</span>
+        <h3>iOS Version Coming Soon</h3>
+        <p class="modal-highlight">We’re actively working on bringing the app to iOS.</p>
+        <p class="modal-subtext">Follow our Instagram page to get the latest announcements and release updates.</p>
+        <a href="https://www.instagram.com/fitnice.ai" target="_blank" class="instagram-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            Follow on Instagram
+        </a>
+    </div>
+</div>
+
+    <script src="site.js"></script>
+</body>
+</html>

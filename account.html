@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - FITNICE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation - Dynamic Island -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h2>FITNICE</h2>
+            <span class="company-name">by Aitectra</span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="account.html" class="nav-link active">Account</a>
+            <div class="theme-switcher premium">
+                <button class="theme-btn active" data-theme="dark" aria-label="Dark theme" title="Dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <button class="theme-btn" data-theme="light" aria-label="Light theme" title="Light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+            </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+</nav>
+
+<!-- Mobile Panel -->
+<div class="mobile-panel" id="mobilePanel">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="account.html">Account</a>
+    <div class="mobile-theme-selector premium-mobile">
+        <button class="mobile-theme-option active" data-theme="dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            Dark
+        </button>
+        <button class="mobile-theme-option" data-theme="light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            Light
+        </button>
+    </div>
+</div>
+
+<!-- Account Page Content -->
+<div class="account-page-wrapper">
+    <!-- Premium Header -->
+    <header class="account-hero reveal">
+        <div class="hero-glow"></div>
+        <div class="hero-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="hero-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h1>Account Settings</h1>
+        <p class="hero-subtitle">Manage your FITNICE account preferences and data.</p>
+    </header>
+
+    <main class="account-content">
+        <!-- Danger Zone Card -->
+        <section class="glass-card danger-zone reveal delay-1">
+            <div class="card-header danger">
+                <div class="icon-box red-glow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+                </div>
+                <h2>Danger Zone</h2>
+            </div>
+            
+            <div class="card-body">
+                <h3 class="danger-title">Delete Your FITNICE Account</h3>
+                <p class="warning-text">
+                    Permanently remove your account and all associated data. <strong>This action cannot be undone.</strong>
+                </p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="dot"></span>
+                        <p>All workout data & progress</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="dot"></span>
+                        <p>Meal plans & nutrition logs</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="dot"></span>
+                        <p>AI coaching history</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="dot"></span>
+                        <p>Subscriptions & preferences</p>
+                    </div>
+                </div>
+
+                <div class="deletion-steps-modern">
+                    <h3 class="steps-title">How to request deletion</h3>
+                    <div class="step-modern">
+                        <div class="step-number">1</div>
+                        <div class="step-text">
+                            <strong>Send an email</strong> to our support team at <span class="highlight-text">tectra.ai@gmail.com</span> using your registered email address.
+                        </div>
+                    </div>
+                    <div class="step-modern">
+                        <div class="step-number">2</div>
+                        <div class="step-text">
+                            Use the subject line: <em class="highlight-text">"Delete My FITNICE Account"</em>.
+                        </div>
+                    </div>
+                    <div class="step-modern">
+                        <div class="step-number">3</div>
+                        <div class="step-text">
+                            Please provide your username in the email body to confirm permanent deletion.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="processing-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>Requests are processed within <strong>7 business days</strong>. You have 3 days to cancel the request.</span>
+                </div>
+
+                <button id="openEmailBtn" class="premium-btn danger-btn">
+                    <span class="btn-glow"></span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,5.11 21.1,4 20,4Z"/>
+                    </svg>
+                    <span class="btn-text">Open Gmail & Send Request</span>
+                </button>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>FITNICE</h3>
+            <p>Your AI-powered fitness companion</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="features.html">Features</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+            <h3>Support</h3>
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="mailto:tectra.ai@gmail.com">Support</a>
+        </div>
+    </div>
+</footer>
+
+<script src="site.js"></script>
+<script src="delete-account.js"></script>
+</body>
+</html>
